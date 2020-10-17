@@ -11,11 +11,11 @@ void aim(int& x, int& y) {
 
 // производит простейшую симуляцию броска, после которого изменяются координаты точки
 void throwADart(int& x, int& y) {
-    // более непредсказумый выбор случайного числа (алгоритм Вихря Мерсенна), нежели если использовать сид
+    // более непредсказумый выбор случайного числа 
     std::random_device rd;
     std::mt19937 mersenne(rd());
-    x += static_cast<int>(mersenne() % 11 - 5);
-    y += static_cast<int>(mersenne() % 11 - 5);
+    x += static_cast<int>(mersenne() % 11 - 6);
+    y += static_cast<int>(mersenne() % 11 - 6);
 }
 
 // прицеливание, бросок и подсчет очков
